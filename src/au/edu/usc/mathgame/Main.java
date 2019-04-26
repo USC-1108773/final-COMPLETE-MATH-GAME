@@ -1,6 +1,5 @@
 package au.edu.usc.mathgame;
-import java.util.Random;
-import java.util.Scanner;
+
 
 
 /**
@@ -11,15 +10,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Random rand = new Random();
-        {
 
-            Question q1 = new Question(3,5);
+            Question q1 = new Question(3,5,"+");
             q1.showQuestion();}
         {
-    Question response=new Question(3,5);
-        response.checkAnswer();
-        }}}
+
+        }}
 
 
 
