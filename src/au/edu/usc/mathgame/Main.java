@@ -10,31 +10,17 @@ import java.util.Scanner;
  */
 public class Main {
     public static void main(String[] args) {
+
         Random rand = new Random();
-        for(int i=0;i<5;i++){
+        {
 
-            int X = rand.nextInt(12) + 1;
-            int Y = rand.nextInt(12);
-
-
-
-            {
-                System.out.println("what is " + X + "+" + Y + "?");
-            }
-
-            int correct = X + Y;
-
-            Scanner input = new Scanner(System.in);
-            int response = input.nextInt();
-            if (response == correct)
-            {
-                System.out.println("yes you are right");
-            } else {
-                System.out.println("no answer is wrong");
-            }
-
-
+            Question q1 = new Question(3,5);
+            q1.showQuestion();}
+        {
+    Question response=new Question(3,5);
+        response.checkAnswer();
         }}}
+
 
 
 
